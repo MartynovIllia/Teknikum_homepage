@@ -26,6 +26,8 @@ ul{
 header{
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: greenyellow;
     position: sticky;
     top: 0;
@@ -61,7 +63,11 @@ img{
 p, h2, h4, h3{
     padding-left: 10px;
 }
-h1{
-    margin: 10px;
-
+h1, .header {
+    grid-column: 2;
+    margin: 5px;
+}
+a.right{
+    grid-column: 3;
+    align-self: right;
 }
